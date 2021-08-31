@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: Bitter;
+  font-weight: bold;
+  background-color: #f1f2f3;
+  text-align: center;
+  margin: 0;
+}
+
+a#github-repo {
+  color: #231f20;
+  font-size: 3rem;
+  position: absolute;
+  right: 1.25rem;
+  top: 0.5rem;
+}
+
+h1 {
+  font-family: Montserrat;
+}
+
+label {
+  font-size: 1.2rem;
+  display: block;
+  margin: 0.5rem auto 0;
+  padding: 1rem;
+}
+
+input {
+  font-family: Bitter;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+  width: 12rem;
+  padding: 0.6rem 1.25rem;
+}
+
+button#check-button {
+  font-family: Bitter;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ff5200;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  margin: 1.2rem auto;
+}
+
+button#check-button:hover {
+  background-color: #000;
+  color: #ff5200;
+}
+
+div#output-text {
+  /* display: none; */
+  margin: 0.5rem auto 1rem;
+  font-size: 1.75rem;
+}
+
+/* privacy notice */
+div#privacy-notice {
+  background-color: rgb(24, 24, 24);
+  color: #e1ecff;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  padding: 1rem;
+  margin: 3rem auto 0;
+  width: 870px;
+  position: absolute;
+  left: 230px;
+  bottom: 3.5rem;
+}
