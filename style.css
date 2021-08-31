@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 body {
-  font-family: Bitter;
+  font-family: Lato;
   font-weight: bold;
   background-color: #f1f2f3;
   text-align: center;
@@ -29,7 +29,7 @@ label {
 }
 
 input {
-  font-family: Bitter;
+  font-family: Lato;
   font-size: 1.1rem;
   font-weight: bold;
   text-align: center;
@@ -42,7 +42,7 @@ input {
 }
 
 button#check-button {
-  font-family: Bitter;
+  font-family: Lato;
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
@@ -59,9 +59,13 @@ button#check-button:hover {
 }
 
 div#output-text {
-  /* display: none; */
-  margin: 0.5rem auto 1rem;
+  display: none;
   font-size: 1.75rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+  margin: 0.5rem auto 1rem;
+  padding: 1rem;
+  width: 63%;
 }
 
 /* privacy notice */
@@ -75,5 +79,5 @@ div#privacy-notice {
   width: 870px;
   position: absolute;
   left: 230px;
-  bottom: 3.5rem;
+  bottom: 2rem;
 }
