@@ -35,7 +35,7 @@ function calculateProfitOrLoss(initialPrice, stocksQty, currentPrice) {
   if (currentPrice > initialPrice) {
     // profit logic
     var profit = (currentPrice - initialPrice) * stocksQty;
-    var profitPercentage = (profit / initialPrice) * 100;
+    var profitPercentage = ((currentPrice - initialPrice) / initialPrice) * 100;
     console.log("Profit:", profit, "and Profit Percentage:", profitPercentage);
 
     outputText.style.display = "block";
@@ -44,7 +44,7 @@ function calculateProfitOrLoss(initialPrice, stocksQty, currentPrice) {
   else if (currentPrice < initialPrice) {
     // loss logic
     var loss = (initialPrice - currentPrice) * stocksQty;
-    var lossPercentage = (loss / initialPrice) * 100;
+    var lossPercentage = ((initialPrice - currentPrice) / initialPrice) * 100;
     console.log("Loss:", loss, "and Loss Percentage:", lossPercentage);
 
     outputText.style.display = "block";
