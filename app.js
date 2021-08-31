@@ -7,9 +7,9 @@ var outputText = document.querySelector("#output-text");
 checkBtn.addEventListener("click", checkBtnHandler);
 
 function checkBtnHandler() {
-  var initialPrice = parseFloat(initialPriceInput.value);
-  var stocksQty = parseInt(stocksQtyInput.value);
-  var currentPrice = parseFloat(currentPriceInput.value);
+  var initialPrice = Number.parseFloat(initialPriceInput.value);
+  var stocksQty = Number.parseInt(stocksQtyInput.value);
+  var currentPrice = Number.parseFloat(currentPriceInput.value);
 
   // user input validations for "empty inputs or not" and "positive input numbers or not"
   if ((initialPriceInput.value !== "") && (stocksQtyInput.value !== "") && (currentPriceInput.value !== "")) {
@@ -34,7 +34,7 @@ function checkBtnHandler() {
 function calculateProfitOrLoss(initialPrice, stocksQty, currentPrice) {
   if (currentPrice > initialPrice) {
     // profit logic
-    var profit = currentPrice - initialPrice;
+    var profit = (currentPrice - initialPrice) * stocksQty;
     var profitPercentage = (profit / initialPrice) * 100;
     console.log("Profit:", profit, "and Profit Percentage:", profitPercentage);
 
@@ -43,7 +43,7 @@ function calculateProfitOrLoss(initialPrice, stocksQty, currentPrice) {
   }
   else if (currentPrice < initialPrice) {
     // loss logic
-    var loss = initialPrice - currentPrice;
+    var loss = (initialPrice - currentPrice) * stocksQty;
     var lossPercentage = (loss / initialPrice) * 100;
     console.log("Loss:", loss, "and Loss Percentage:", lossPercentage);
 
@@ -62,16 +62,17 @@ function calculateProfitOrLoss(initialPrice, stocksQty, currentPrice) {
 // show profit to user
 function showProfit(profit, profitPercentage) {
   outputText.style.color = "green";
-  outputText.innerHTML = `The profit is Rs. ${profit} and profit percentage is ${profitPercentage}%.`;
+  outputText.innerHTML = `The profit is Rs. ${profit} and the profit percentage is ${profitPercentage.toFixed(2)} %.`;
 }
 
 // show loss to user
 function showLoss(loss, lossPercentage) {
   outputText.style.color = "red";
-  outputText.innerHTML = `The loss is Rs. ${loss} and loss percentage is ${lossPercentage}%.`;
+  outputText.innerHTML = `The loss is Rs. ${loss} and the loss percentage is ${lossPercentage.toFixed(2)} %.`;
 }
 
 function showMessageText(msg) {
   outputText.style.display = "block";
+  outputText.style.color = "black";
   outputText.innerText = msg;
 }
