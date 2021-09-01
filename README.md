@@ -9,5 +9,5 @@ A VanillaJS app that takes 3 inputs - the price at which you bought stocks, the 
 
 ## Screenshots:
 
-![image](https://user-images.githubusercontent.com/58262449/131556499-fed995b0-f1cd-480e-a48d-f44dc9ca3042.png)
-![image](https://user-images.githubusercontent.com/58262449/131556814-86a6505e-d6f5-4faa-bf17-8c4c600dd5f9.png)
+![image](https://user-images.githubusercontent.com/58262449/131617022-d6288440-5c35-4bbc-bc1b-ccad2a9b1ec7.png)
+![image](https://user-images.githubusercontent.com/58262449/131617051-4a6e10cf-aff3-477f-bb2a-5c444915ae07.png)
