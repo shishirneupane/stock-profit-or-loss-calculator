@@ -55,24 +55,32 @@ function calculateProfitOrLoss(initialPrice, stocksQty, currentPrice) {
 
     outputText.style.display = "block";
     outputText.style.color = "black";
+    outputText.style.backgroundColor = "#f1f2f3";
+    outputText.style.border = "2px solid black";
     outputText.innerHTML = "No profit or loss. The current price is the same as when you bought it.";
   }
 }
 
 // show profit to user
 function showProfit(profit, profitPercentage) {
-  outputText.style.color = "green";
+  outputText.style.color = "#f1f2f3";
+  outputText.style.border = "2px solid rgb(0 167 0)";
+  outputText.style.backgroundColor = "rgb(0 167 0)";
   outputText.innerHTML = `The profit is Rs. ${profit} and the profit percentage is ${profitPercentage.toFixed(2)} %.`;
 }
 
 // show loss to user
 function showLoss(loss, lossPercentage) {
-  outputText.style.color = "red";
+  outputText.style.color = "#f1f2f3";
+  outputText.style.border = "2px solid red";
+  outputText.style.backgroundColor = "red";
   outputText.innerHTML = `The loss is Rs. ${loss} and the loss percentage is ${lossPercentage.toFixed(2)} %.`;
 }
 
 function showMessageText(msg) {
   outputText.style.display = "block";
   outputText.style.color = "black";
+  outputText.style.backgroundColor = "#f1f2f3";
+  outputText.style.border = "2px solid black";
   outputText.innerText = msg;
 }
