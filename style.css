@@ -68,6 +68,14 @@ div#output-text {
   width: 63%;
 }
 
+div#spinner {
+  display: none;
+}
+
+div#spinner img {
+  width: 7%;
+}
+
 /* privacy notice */
 div#privacy-notice {
   background-color: rgb(24, 24, 24);
