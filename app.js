@@ -1,4 +1,4 @@
-var initialPriceInput = document.querySelector("#initial-price-input");
+﻿var initialPriceInput = document.querySelector("#initial-price-input");
 var stocksQtyInput = document.querySelector("#stocks-qty-input");
 var currentPriceInput = document.querySelector("#current-price-input");
 var checkBtn = document.querySelector("#check-button");
@@ -96,7 +96,7 @@ function showProfit(profit, profitPercentage) {
   outputText.style.color = "#f1f2f3";
   outputText.style.border = "2px solid rgb(0 149 0)";
   outputText.style.backgroundColor = "rgb(0 149 0)";
-  outputText.innerHTML = `<span>😄</span> The profit is Rs. ${profit} and the profit percentage is ${profitPercentage.toFixed(2)} %. <span>😄</span>`;
+  outputText.innerHTML = `<span>😄</span> The profit is Rs. ${profit.toFixed(2)} and the profit percentage is ${profitPercentage.toFixed(2)} %. <span>😄</span>`;
 
 }
 
@@ -107,7 +107,7 @@ function showLoss(loss, lossPercentage) {
   outputText.style.color = "#f1f2f3";
   outputText.style.border = "2px solid red";
   outputText.style.backgroundColor = "red";
-  outputText.innerHTML = `<span>😭</span> The loss is Rs. ${loss} and the loss percentage is ${lossPercentage.toFixed(2)} %. <span>😭</span>`;
+  outputText.innerHTML = `<span>😭</span> The loss is Rs. ${loss.toFixed(2)} and the loss percentage is ${lossPercentage.toFixed(2)} %. <span>😭</span>`;
 
 }
 
